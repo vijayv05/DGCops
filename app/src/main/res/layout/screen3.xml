@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/appd" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enterprise Console List"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#C4C2BD">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C4C2BD"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ec1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:clickable="true"
+            android:text="Enterprise Console1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ec2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:clickable="true"
+            android:text="Enterprise Console2"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ec3"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:clickable="true"
+            android:text="Enterprise Console3"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

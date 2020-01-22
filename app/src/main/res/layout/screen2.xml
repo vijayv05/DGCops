@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/appd" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ecDetailsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:fitsSystemWindows="true"
+            android:text="Enter EC Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ecName"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enterprise Console Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ecHostName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Host Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ecHostPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Port"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ecUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ecPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/sslEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SSL Enabled" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Enterprise Console"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
