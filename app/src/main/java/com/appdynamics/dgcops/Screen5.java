@@ -25,23 +25,8 @@ public class Screen5 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        List<Platform> platforms = null;
         super.onCreate(savedInstanceState);
-        try {
 
-            int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET);
-            if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
-                platforms = APIController.executeGET("http://server1:9191/service/platforms");
-                System.out.println(platforms);
-                Toast.makeText(this, platforms.get(0).getName(), Toast.LENGTH_LONG).show();
-            } else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET}, 0);
-            }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
 
         setContentView(R.layout.screen5);
