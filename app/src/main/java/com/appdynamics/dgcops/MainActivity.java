@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AbstractScreen {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

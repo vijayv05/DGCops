@@ -20,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="91dp">
 
-        <TextView
-            android:id="@+id/textView3"
+        <EditText
+            android:id="@+id/ecNameTextField"
             android:layout_width="match_parent"
             android:layout_marginLeft="35dp"
             android:layout_height="38dp"
@@ -72,6 +72,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
+                                android:id="@+id/platformName1"
                                 android:textSize="24dp"
                                 android:textColor="#ffff"
                                 android:layout_width="wrap_content"
@@ -84,12 +85,6 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
-                            <ImageView
-                                android:layout_alignParentRight="true"
-                                android:layout_width="80dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/background_image"/>
 
 
 
@@ -110,12 +105,13 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="Controller Health"
                                 android:textSize="16dp"
                                 android:textColor="#ffff"/>
                             <ImageView
+                                android:id="@+id/controllerHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:src="@color/colorAccent"/>
@@ -129,12 +125,13 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="ES Health"
                                 android:textSize="16dp"
                                 android:textColor="#ffff"/>
                             <ImageView
+                                android:id="@+id/eventServiceHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:src="@color/colorPrimary"/>
@@ -209,11 +206,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <ImageView
-                                android:layout_alignParentRight="true"
-                                android:layout_width="80dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/background_image"/>
 
 
 
@@ -234,7 +226,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="Controller Health"
                                 android:textSize="16dp"
@@ -253,7 +245,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="ES Health"
                                 android:textSize="16dp"

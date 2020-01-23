@@ -7,12 +7,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Screen2 extends AppCompatActivity {
+public class Screen2 extends AbstractScreen {
 
     public static final String EC = "EC_DETAILS";
 
@@ -34,11 +35,14 @@ public class Screen2 extends AppCompatActivity {
 
 
                 ECDetails ec = new ECDetails();
-                ec.setEcname(((TextView)findViewById(R.id.ecName)).getText().toString());
-                ec.setHost(((TextView)findViewById(R.id.ecHostName)).getText().toString());
-                ec.setPort(Integer.parseInt(((TextView)findViewById(R.id.ecHostPort)).getText().toString()));
-                ec.setUsername(((TextView)findViewById(R.id.ecUsername)).getText().toString());
-                ec.setPassword(((TextView)findViewById(R.id.ecPassword)).getText().toString());
+                EditText ecName = (EditText)findViewById(R.id.ecName);
+
+
+                ec.setEcname(ecName.getText().toString());
+                ec.setHost(((EditText)findViewById(R.id.ecHostName)).getText().toString());
+                ec.setPort(Integer.parseInt(((EditText)findViewById(R.id.ecHostPort)).getText().toString()));
+                ec.setUsername(((EditText)findViewById(R.id.ecUsername)).getText().toString());
+                ec.setPassword(((EditText)findViewById(R.id.ecPassword)).getText().toString());
                 ec.setSSLEnabled(((CheckBox)findViewById(R.id.sslEnabled)).isEnabled());
 
                 StringBuilder sb = new StringBuilder();
