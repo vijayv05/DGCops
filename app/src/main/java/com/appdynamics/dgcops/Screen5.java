@@ -32,8 +32,8 @@ public class Screen5 extends AppCompatActivity {
 
             int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET);
             if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Shaata", Toast.LENGTH_SHORT).show();
-                platforms = APIController.executeGET("http://server1:9191/service/platforms");
+
+                platforms = APIController.executeGET("http://44.228.208.139:9191//service/platforms");
                 System.out.println(platforms);
                 Toast.makeText(this, platforms.get(0).getName(), Toast.LENGTH_LONG).show();
             } else {
