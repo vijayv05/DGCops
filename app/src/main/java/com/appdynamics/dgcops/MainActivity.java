@@ -21,6 +21,8 @@ public class MainActivity extends AbstractScreen {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         final Context context = this;
         ArrayList<ECDetails> ecList = new ArrayList<>();
         Intent intent = getIntent();

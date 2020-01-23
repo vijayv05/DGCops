@@ -136,21 +136,23 @@ public class Screen3 extends AbstractScreen {
             tv.setSingleLine(true);
 
 
+            if(tv.getText().toString().contains("Prod")) {
+                tv.setOnClickListener(new View.OnClickListener() {
 
-            tv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        setContentView(R.layout.screen5);
+                    }
+                });
+            } else {
+                tv.setOnClickListener(new View.OnClickListener() {
 
-                @Override
-                public void onClick(View arg0) {
-
-
-
-
-                    Intent intent = new Intent(context, Screen5.class);
-                    intent.putExtra("ECName", "ecname");
-
-                    startActivity(intent);
-                }
-            });
+                    @Override
+                    public void onClick(View arg0) {
+                        setContentView(R.layout.screen5a);
+                    }
+                });
+            }
 
             fl.addView(tv);
 

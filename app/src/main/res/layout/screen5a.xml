@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="35dp"
             android:layout_height="38dp"
-            android:text="Prod-EC"
+            android:text="Test-EC"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -77,7 +77,7 @@
                                 android:textColor="#ffff"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="AWS2_Local"/>
+                                android:text="platform987"/>
 
 
 
@@ -114,7 +114,7 @@
                                 android:id="@+id/controllerHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
-                                android:src="@color/colorPrimary"/>
+                                android:src="@color/colorAccent"/>
 
                         </LinearLayout>
 
@@ -134,125 +134,6 @@
                                 android:id="@+id/eventServiceHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
-                                android:src="@color/colorPrimary"/>
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="191dp"
-            android:orientation="vertical">
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="349dp"
-                android:layout_height="157dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginRight="30dp"
-                app:cardCornerRadius="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="157dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg1">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginTop="20dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:textSize="24dp"
-                                android:textColor="#ffff"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Dummy_platform"/>
-
-
-
-                        </LinearLayout>
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-
-
-
-                        </RelativeLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:orientation="vertical"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginTop="20dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="130dp"
-                                android:layout_height="wrap_content"
-                                android:text="Controller Health"
-                                android:textSize="16dp"
-                                android:textColor="#ffff"/>
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:src="@color/colorGray"/>
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="130dp"
-                                android:layout_height="wrap_content"
-                                android:text="ES Health"
-                                android:textSize="16dp"
-                                android:textColor="#ffff"/>
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
                                 android:src="@color/colorGray"/>
 
                         </LinearLayout>
@@ -275,6 +156,7 @@
 
 
         </LinearLayout>
+
 
     </LinearLayout>
 
