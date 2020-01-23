@@ -55,6 +55,7 @@
         android:background="#C4C2BD"
         android:orientation="vertical">
 
+        <!--
         <TextView
             android:id="@+id/ec1"
             android:layout_width="match_parent"
@@ -78,6 +79,7 @@
             android:clickable="true"
             android:text="Enterprise Console3"
             android:textSize="24sp" />
+            -->
     </LinearLayout>
 
 
