@@ -55,37 +55,36 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="157dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg1">
+                    android:background="@drawable/bg1"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
                         android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:id="@+id/platformName1"
-                                android:textSize="24dp"
-                                android:textColor="#ffff"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="AWS2_Local"/>
-
+                                android:text="AWS2_Local"
+                                android:textColor="#ffff"
+                                android:textSize="24dp" />
 
 
                         </LinearLayout>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
 
 
                         </RelativeLayout>
@@ -95,9 +94,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
-                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
                         android:layout_marginRight="30dp"
-                        android:layout_marginTop="20dp">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -108,13 +107,14 @@
                                 android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="Controller Health"
-                                android:textSize="16dp"
-                                android:textColor="#ffff"/>
+                                android:textColor="#ffff"
+                                android:textSize="16dp" />
+
                             <ImageView
                                 android:id="@+id/controllerHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
-                                android:src="@color/colorPrimary"/>
+                                android:src="@color/colorPrimary" />
 
                         </LinearLayout>
 
@@ -128,27 +128,39 @@
                                 android:layout_width="130dp"
                                 android:layout_height="wrap_content"
                                 android:text="ES Health"
-                                android:textSize="16dp"
-                                android:textColor="#ffff"/>
+                                android:textColor="#ffff"
+                                android:textSize="16dp" />
+
                             <ImageView
                                 android:id="@+id/eventServiceHealth1"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
-                                android:src="@color/colorPrimary"/>
+                                android:src="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="navigateNext"
+                                android:text="Details"/>
 
                         </LinearLayout>
 
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
 
                         </LinearLayout>
 
                     </LinearLayout>
-
 
 
                 </LinearLayout>

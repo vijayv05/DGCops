@@ -72,7 +72,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:id="@+id/platformName1"
+                                android:id="@+id/platformName1a"
                                 android:textSize="24dp"
                                 android:textColor="#ffff"
                                 android:layout_width="wrap_content"

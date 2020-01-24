@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -32,10 +33,14 @@ public class Screen5 extends AppCompatActivity {
         setContentView(R.layout.screen5);
 
 
-
-
-
     }
+
+    public void navigateNext(View view) {
+        Intent intent = new Intent(this, Screen6.class);
+        startActivity(intent);
+    }
+
+
 
 
 

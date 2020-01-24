@@ -141,7 +141,11 @@ public class Screen3 extends AbstractScreen {
 
                     @Override
                     public void onClick(View arg0) {
-                        setContentView(R.layout.screen5);
+//                        TextView platformName = (TextView) findViewById(R.id.platformName1);
+//                        platformName.setText("NewText");
+                        Intent intent = new Intent(context, Screen5.class);
+                        startActivity(intent);
+//                        setContentView(R.layout.screen5);
                     }
                 });
             } else {
@@ -149,7 +153,8 @@ public class Screen3 extends AbstractScreen {
 
                     @Override
                     public void onClick(View arg0) {
-                        setContentView(R.layout.screen5a);
+                        Intent intent = new Intent(context, Screen5a.class);
+                        startActivity(intent);
                     }
                 });
             }
