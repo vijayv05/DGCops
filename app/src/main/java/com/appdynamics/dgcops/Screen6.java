@@ -52,7 +52,7 @@ public class Screen6 extends AppCompatActivity {
         int notificationID = 101;
         String channelID = "Controller Down";
 
-            Intent resultIntent = new Intent(this, Screen5a.class);
+            Intent resultIntent = new Intent(this, Screen6a.class);
 
             PendingIntent pendingIntent =
                     PendingIntent.getActivity(
